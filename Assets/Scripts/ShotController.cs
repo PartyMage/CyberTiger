@@ -6,7 +6,8 @@ public class ShotController : MonoBehaviour {
 
     public float speed;
     public bool concussive = false;
-
+    
+    private Vector2 objectPoolPosition = new Vector2(-15f, -25f);
 	// Use this for initialization
 	void Start () {
         speed = 20f;
@@ -21,13 +22,18 @@ public class ShotController : MonoBehaviour {
     
     void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Enemy") {
-            Destroy(other.gameObject);
+            GameController.instance.score++;
+            GameController.instance.scoreText.text = "Score: " + GameController.instance.score.ToString();
+            other.gameObject.transform.position = objectPoolPosition;
             Destroy(gameObject);
         }
         if (other.tag == "Obstacle")
         {
-            if (concussive == true)
-                Destroy(other.gameObject);
+            if (concussive == true) {
+                GameController.instance.score++;
+                GameController.instance.scoreText.text = "Score: " + GameController.instance.score.ToString();
+                other.gameObject.transform.position = objectPoolPosition;
+            }
             Destroy(gameObject);
 
         }

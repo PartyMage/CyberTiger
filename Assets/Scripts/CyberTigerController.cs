@@ -8,7 +8,6 @@ public class CyberTigerController : MonoBehaviour {
 
     public float upForce = 200f;
     public int energy = 100;
-    public int count = 0;
     public Slider energyBar;
     public float shotSpeed = 500f;
     public GameObject currentShot;
@@ -22,8 +21,10 @@ public class CyberTigerController : MonoBehaviour {
 
     private bool isDead = false;
     private Rigidbody2D rb2d;
-	// Use this for initialization
-	void Start () {
+    private int lastSpeedup = 1;
+    private Vector2 objectPoolPosition = new Vector2(-15f, -25f);
+    // Use this for initialization
+    void Start () {
         rb2d = GetComponent<Rigidbody2D> ();
         energyBar.maxValue = energy;
         currentShot = laser;
@@ -32,9 +33,12 @@ public class CyberTigerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        count++;
-        if (count % 500 == 0)
+
+        if (GameController.instance.score % 3 == 0 && lastSpeedup != GameController.instance.score) {
+            lastSpeedup = GameController.instance.score;
             GameController.instance.scrollSpeed *= 1.5f;
+        }
+
         energyBar.value = energy;
         if (energyBar.value <= 0)
             isDead = true;
@@ -63,15 +67,15 @@ public class CyberTigerController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Enemy") {
             energy -= 20;
-            Destroy(other.gameObject);
+            other.gameObject.transform.position = objectPoolPosition;
         }
         if (other.gameObject.tag == "Enemy Shot") {
             energy -= 5;
-            Destroy(other.gameObject);
+            other.gameObject.transform.position = objectPoolPosition;
         }
         if (other.gameObject.tag == "Obstacle") {
             energy -= 20;
-            Destroy(other.gameObject);
+            other.gameObject.transform.position = objectPoolPosition;
         }
         if (other.gameObject.tag == "Pickup") {
             if (GameController.instance.pickupType == 0) {
@@ -79,15 +83,15 @@ public class CyberTigerController : MonoBehaviour {
                 switch (GameController.instance.pickupNumber) {
                     case 0:
                         energy += 10;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 1:
                         energy += 25;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 2:
                         energy += 50;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                 }
             }
@@ -97,27 +101,27 @@ public class CyberTigerController : MonoBehaviour {
                     case 0:
                         currentEnergyCost = 6;
                         currentShot = laser;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 1:
                         currentEnergyCost = 8;
                         currentShot = plasma;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 2:
                         currentEnergyCost = 8;
                         currentShot = sonic;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 3:
                         currentEnergyCost = 20;
                         currentShot = scatter;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 4:
                         currentEnergyCost = 8;
                         currentShot = concussive;
-                        Destroy(other.gameObject);
+                        other.gameObject.transform.position = objectPoolPosition;
                         break;
                 }
             }
