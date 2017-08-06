@@ -16,9 +16,11 @@ public class GameController : MonoBehaviour {
     public Text scoreText;
 
     // Use this for initialization
-    void Awake () {
-        if (instance == null)
+    void Awake() {
+        if (instance == null) {
+            DontDestroyOnLoad(gameObject);
             instance = this;
+        }
         else if (instance != this)
             Destroy(gameObject);
 	}
