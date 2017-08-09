@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour {
 
     public Image startScreen;
     public Image creditsPage;
+    public Image storePage;
     public int count;
     public bool ableToClick;
 	// Use this for initialization
@@ -41,15 +42,25 @@ public class MainMenu : MonoBehaviour {
     }
 
     //click to view credits
-    public void CreditsClick() {
+    public void StoreClick() {
+        storePage.gameObject.SetActive(true);
+
+        if (Input.GetMouseButtonDown(0)) {
+            storePage.gameObject.SetActive(false);
+        }
+    }
+
+    public void CreditsClick()
+    {
         creditsPage.gameObject.SetActive(true);
 
         if (Input.GetMouseButtonDown(0)) {
-            BackToMenu();
+            creditsPage.gameObject.SetActive(false);
         }
     }
 
     public void BackToMenu() {
         creditsPage.gameObject.SetActive(false);
+        storePage.gameObject.SetActive(false);
     }
 }

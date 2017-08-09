@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: acb5c790df4d1c54a83413e1dd6e858d
+timeCreated: 1502193312
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Superheterodyne
+  fontNames:
+  - Superheterodyne
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

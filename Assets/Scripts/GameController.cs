@@ -7,13 +7,16 @@ public class GameController : MonoBehaviour {
 
     public static GameController instance;
     public GameObject deathMenu;
+    public Text scoreText;
     public float scrollSpeed = -3.5f;
     public bool gameOver = false;
     public int shotTypeNumber = 0;
     public int pickupType = 0;
     public int pickupNumber = 0;
+    public int totalScore = 0;
+    public int lifetimeScore = 0;
     public int score = 0;
-    public Text scoreText;
+    public int energy = 100;
 
     // Use this for initialization
     void Awake() {
