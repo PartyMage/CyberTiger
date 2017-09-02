@@ -9,14 +9,11 @@ public class CyberTigerController : MonoBehaviour {
     public float upForce = 200f;
     public int energy = 100;
     public Slider energyBar;
+    public Text currentEnergy;
     public float shotSpeed = 500f;
     public GameObject currentShot;
     public int currentEnergyCost = 6;
-    public GameObject laser;
-    public GameObject plasma;
-    public GameObject sonic;
-    public GameObject scatter;
-    public GameObject concussive;
+    public GameObject[] weapon;
     public Transform firePoint;
 
     private bool isDead = false;
@@ -27,13 +24,13 @@ public class CyberTigerController : MonoBehaviour {
     void Start () {
         rb2d = GetComponent<Rigidbody2D> ();
         energyBar.maxValue = energy;
-        currentShot = laser;
+        currentShot = weapon[0];
         
     }
 	
 	// Update is called once per frame
 	void Update () {
-
+        currentEnergy.text = energy.ToString();
         if (GameController.instance.score % 3 == 0 && lastSpeedup != GameController.instance.score) {
             lastSpeedup = GameController.instance.score;
             GameController.instance.scrollSpeed *= 1.5f;
@@ -100,27 +97,27 @@ public class CyberTigerController : MonoBehaviour {
                 switch (GameController.instance.pickupNumber) {
                     case 0:
                         currentEnergyCost = 6;
-                        currentShot = laser;
+                        currentShot = weapon[0];
                         other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 1:
                         currentEnergyCost = 8;
-                        currentShot = plasma;
+                        currentShot = weapon[1];
                         other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 2:
                         currentEnergyCost = 8;
-                        currentShot = sonic;
+                        currentShot = weapon[2];
                         other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 3:
                         currentEnergyCost = 20;
-                        currentShot = scatter;
+                        currentShot = weapon[3];
                         other.gameObject.transform.position = objectPoolPosition;
                         break;
                     case 4:
                         currentEnergyCost = 8;
-                        currentShot = concussive;
+                        currentShot = weapon[4];
                         other.gameObject.transform.position = objectPoolPosition;
                         break;
                 }
