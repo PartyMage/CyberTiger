@@ -37,8 +37,14 @@ public class MainMenu : MonoBehaviour {
 	}
 
     //click to start the game
-    public void TigerRun() {
+    public void StoryClick() {
         SceneManager.LoadScene(1);
+    }
+
+    //click to start the game
+    public void EndlessClick()
+    {
+        SceneManager.LoadScene(2);
     }
 
     //click to view credits
