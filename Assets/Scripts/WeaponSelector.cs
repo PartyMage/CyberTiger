@@ -23,7 +23,7 @@ public class WeaponSelector : MonoBehaviour {
 		
 	}
 
-    void openButtonPress() {
+    public void openButtonPress() {
         
     }
 }
