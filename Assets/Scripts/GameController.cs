@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour {
         if (instance == null) {
             DontDestroyOnLoad(gameObject);
             instance = this;
+            deathMenu = GameObject.Find("Death Menu");
+            scoreText = GameObject.Find("Score").GetComponent<Text>();
         }
         else if (instance != this)
             Destroy(gameObject);

@@ -40,7 +40,7 @@ public class CyberTigerController : MonoBehaviour {
         if (energyBar.value <= 0)
             isDead = true;
         if (isDead == true) {
-            GameController.instance.deathMenu.SetActive (true);
+            MenuController.
             GameController.instance.gameOver = true;
         }
             
