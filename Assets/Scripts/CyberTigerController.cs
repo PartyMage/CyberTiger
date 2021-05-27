@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ public class CyberTigerController : MonoBehaviour {
     public float upForce = 200f;
     public int energy = 100;
     public Slider energyBar;
-    public Text currentEnergy;
+    public TextMeshProUGUI currentEnergy;
     public float shotSpeed = 500f;
     public GameObject currentShot;
     public int currentEnergyCost = 6;
@@ -40,7 +41,7 @@ public class CyberTigerController : MonoBehaviour {
         if (energyBar.value <= 0)
             isDead = true;
         if (isDead == true) {
-            MenuController.
+            //MenuController.
             GameController.instance.gameOver = true;
         }
             

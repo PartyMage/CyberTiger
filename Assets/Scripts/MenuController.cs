@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour {
 
     public GameObject deathMenu;
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
     public Slider energyBar;
     public Button jump;
     public Button fire;
@@ -32,7 +33,7 @@ public class MenuController : MonoBehaviour {
             // Left to right swipe
             if (startPosition.y < endPosition.y)
             {
-                if (angle < 0 && angle == angle * 1.0f) ;
+                if (angle < 0 && angle == angle * 1.0f) 
                 Debug.Log("Distance: " + dist + " Angle: " + angle + " Speed: " + speed);
 
                 if (dist > 300 && angle < 10 && speed > 1000)
@@ -43,7 +44,7 @@ public class MenuController : MonoBehaviour {
             // right to Left swipe
             if (startPosition.y < endPosition.y)
             {
-                if (angle < 0 && angle == angle * 1.0f);
+                if (angle < 0 && angle == angle * 1.0f)
                 Debug.Log("Distance: " + dist + " Angle: " + angle + " Speed: " + speed);
 
                 if (dist > 300 && angle < 10 && speed > 1000)
@@ -54,7 +55,7 @@ public class MenuController : MonoBehaviour {
             // up to down swipe
             if (startPosition.y < endPosition.y)
             {
-                if (angle < 0 && angle == angle * 1.0f) ;
+                if (angle < 0 && angle == angle * 1.0f)
                 Debug.Log("Distance: " + dist + " Angle: " + angle + " Speed: " + speed);
 
                 if (dist > 300 && angle < 10 && speed > 1000)
@@ -65,7 +66,7 @@ public class MenuController : MonoBehaviour {
             // down to up swipe
             if (startPosition.y < endPosition.y)
             {
-                if (angle < 0 && angle == angle * 1.0f) ;
+                if (angle < 0 && angle == angle * 1.0f)
                 Debug.Log("Distance: " + dist + " Angle: " + angle + " Speed: " + speed);
 
                 if (dist > 300 && angle < 10 && speed > 1000)

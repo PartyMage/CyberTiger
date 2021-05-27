@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ public class GameController : MonoBehaviour {
 
     public static GameController instance;
     public GameObject deathMenu;
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
     public float scrollSpeed = -3.5f;
     public bool gameOver = false;
     public int shotTypeNumber = 0;
@@ -24,7 +25,7 @@ public class GameController : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
             instance = this;
             deathMenu = GameObject.Find("Death Menu");
-            scoreText = GameObject.Find("Score").GetComponent<Text>();
+            scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
         }
         else if (instance != this)
             Destroy(gameObject);

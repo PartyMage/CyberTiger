@@ -6,13 +6,14 @@ public class Spawner : MonoBehaviour {
     //instructions for spawn
     public float timeSinceLastSpawn;
     public float spawnRate = 4f;
-    public int SpawneeType;
+    public GameObject SecondFloorLevel;
     //spawn types
     public GameObject[] Enemies;
     public GameObject[] Obstacles;
-    public GameObject[] platforms;
+    public GameObject platform;
     public GameObject pickup;
     public GameObject[] fullObjectPool;
+    public GameObject[] floorPool;
     //
     public int enemiesPoolSize = 5;
     public int obstaclesPoolSize = 5;
@@ -22,15 +23,17 @@ public class Spawner : MonoBehaviour {
     //is there a second floor yet?
     public bool secondFloorActive = true;
     public int platformTimeCount = 0;
+    public int count = 0;
+    public GameObject objectPoolPosition;
 
-    private Vector2 objectPoolPosition = new Vector2(-15f, -25f);
-    private Vector2 secondFloorPosition = new Vector2(-15f, 25f);
     private System.Random rng = new System.Random();
 
     // Use this for initialization
     void Start () {
-        InstantiationPool();
+        PopulatePool();
         Shuffle();
+        floorPool = new GameObject[10];
+        SecondFloor();
     }
 	
 	// Update is called once per frame
@@ -39,31 +42,41 @@ public class Spawner : MonoBehaviour {
         platformTimeCount++;
         if (timeSinceLastSpawn >= spawnRate) {
             timeSinceLastSpawn = 0;
-            fullObjectPool[fullPoolPosition].transform.position = gameObject.transform.position;
+            fullObjectPool[fullPoolPosition].transform.position = this.transform.position;
             fullPoolPosition++;
             if (fullPoolPosition >= fullObjectPoolPoolSize)
+            {
                 fullPoolPosition = 0;
+                Shuffle();
+            }
+
         }
-        if (platformTimeCount == 10)
-            SecondFloor();
+        if (platformTimeCount == 225)
+        {
+            floorPool[count].transform.position = SecondFloorLevel.transform.position;
+            count++;
+            platformTimeCount = 0;
+            if(count == 9)
+            {
+                count = 0;
+            }
+        }
+
 	}
     //creating the pools of objects to send at cyber tiger
-    void InstantiationPool() {
+    void PopulatePool() {
         fullObjectPoolPoolSize = (enemiesPoolSize + obstaclesPoolSize + pickupsPoolSize);
         fullObjectPool = new GameObject[fullObjectPoolPoolSize];
-        SpawneeType = 0;
         for (int i = 0; i < enemiesPoolSize; i++) {
-            fullObjectPool[fullPoolPosition] = ChooseSpawnee();
+            fullObjectPool[fullPoolPosition] = ChooseSpawnee(0);
             fullPoolPosition++;
         }
-        SpawneeType = 1;
         for (int i = 0; i < obstaclesPoolSize; i++) {
-            fullObjectPool[fullPoolPosition] = ChooseSpawnee();
+            fullObjectPool[fullPoolPosition] = ChooseSpawnee(1);
             fullPoolPosition++;
         }
-        SpawneeType = 2;
         for (int i = 0; i < pickupsPoolSize; i++) {
-            fullObjectPool[fullPoolPosition] = ChooseSpawnee();
+            fullObjectPool[fullPoolPosition] = ChooseSpawnee(2);
             fullPoolPosition++;
         }
         fullPoolPosition = 0;
@@ -71,15 +84,20 @@ public class Spawner : MonoBehaviour {
     //spawn second floor platforms when needed
     public void SecondFloor()
     {
-        GameObject floorTile = null;
         if (secondFloorActive == false)
+        {
             return;
+        }
         else
-            foreach (GameObject floor in platforms)
-                floorTile = Instantiate(floor, secondFloorPosition, Quaternion.identity);
-
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                floorPool[i] = Instantiate(platform, objectPoolPosition.transform);
+            }
+        }
     }
 
+    //shuffle the object being spawned
     public void Shuffle() {
         GameObject holdObject = null;
         int k;
@@ -93,18 +111,18 @@ public class Spawner : MonoBehaviour {
 
     }
     //pick what will spawn between the different types of enemies
-    GameObject ChooseSpawnee ()
+    GameObject ChooseSpawnee (int SpawneeType)
     {
         GameObject holdSpawn = null;
         switch (SpawneeType) {
             case 0:
-                holdSpawn = Instantiate(Enemies[Random.Range(0, Enemies.Length)], objectPoolPosition, Quaternion.identity);
+                holdSpawn = Instantiate(Enemies[Random.Range(0, Enemies.Length)], objectPoolPosition.transform);
                 break;
             case 1:
-                holdSpawn = Instantiate(Obstacles[Random.Range(0, Obstacles.Length)], objectPoolPosition, Quaternion.identity);
+                holdSpawn = Instantiate(Obstacles[Random.Range(0, Obstacles.Length)], objectPoolPosition.transform);
                 break;
             case 2:
-                holdSpawn = Instantiate(pickup, objectPoolPosition, Quaternion.identity);
+                holdSpawn = Instantiate(pickup, objectPoolPosition.transform);
                 break;
         }
             return holdSpawn;

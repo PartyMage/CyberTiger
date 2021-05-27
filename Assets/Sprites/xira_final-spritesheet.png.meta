@@ -1,88 +1,243 @@
 fileFormatVersion: 2
 guid: 3c1daf5b2f089764eb47f9ceb9482e30
-timeCreated: 1501139774
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: xira_final-spritesheet_0
-    21300002: xira_final-spritesheet_1
-    21300004: xira_final-spritesheet_2
-    21300006: xira_final-spritesheet_3
-    21300008: xira_final-spritesheet_4
-    21300010: xira_final-spritesheet_5
-    21300012: xira_final-spritesheet_6
-    21300014: xira_final-spritesheet_7
-    21300016: xira_final-spritesheet_8
-    21300018: xira_final-spritesheet_9
-    21300020: xira_final-spritesheet_10
-    21300022: xira_final-spritesheet_11
-    21300024: xira_final-spritesheet_12
-    21300026: xira_final-spritesheet_13
-    21300028: xira_final-spritesheet_14
-    21300030: xira_final-spritesheet_15
-    21300032: xira_final-spritesheet_16
-    21300034: xira_final-spritesheet_17
-    21300036: xira_final-spritesheet_18
-    21300038: xira_final-spritesheet_19
-    21300040: xira_final-spritesheet_20
-    21300042: xira_final-spritesheet_21
-    21300044: xira_final-spritesheet_22
-    21300046: xira_final-spritesheet_23
-    21300048: xira_final-spritesheet_24
-    21300050: xira_final-spritesheet_25
-    21300052: xira_final-spritesheet_26
-    21300054: xira_final-spritesheet_27
-    21300056: xira_final-spritesheet_28
-    21300058: xira_final-spritesheet_29
-    21300060: xira_final-spritesheet_30
-    21300062: xira_final-spritesheet_31
-    21300064: xira_final-spritesheet_32
-    21300066: xira_final-spritesheet_33
-    21300068: xira_final-spritesheet_34
-    21300070: xira_final-spritesheet_35
-    21300072: xira_final-spritesheet_36
-    21300074: xira_final-spritesheet_37
-    21300076: xira_final-spritesheet_38
-    21300078: xira_final-spritesheet_39
-    21300080: xira_final-spritesheet_40
-    21300082: xira_final-spritesheet_41
-    21300084: xira_final-spritesheet_42
-    21300086: xira_final-spritesheet_43
-    21300088: xira_final-spritesheet_44
-    21300090: xira_final-spritesheet_45
-    21300092: xira_final-spritesheet_46
-    21300094: xira_final-spritesheet_47
-    21300096: xira_final-spritesheet_48
-    21300098: xira_final-spritesheet_49
-    21300100: xira_final-spritesheet_50
-    21300102: xira_final-spritesheet_51
-    21300104: xira_final-spritesheet_52
-    21300106: xira_final-spritesheet_53
-    21300108: xira_final-spritesheet_54
-    21300110: xira_final-spritesheet_55
-    21300112: xira_final-spritesheet_56
-    21300114: xira_final-spritesheet_57
-    21300116: xira_final-spritesheet_58
-    21300118: xira_final-spritesheet_59
-    21300120: xira_final-spritesheet_60
-    21300122: xira_final-spritesheet_61
-    21300124: xira_final-spritesheet_62
-    21300126: xira_final-spritesheet_63
-    21300128: xira_final-spritesheet_64
-    21300130: xira_final-spritesheet_65
-    21300132: xira_final-spritesheet_66
-    21300134: xira_final-spritesheet_67
-    21300136: xira_final-spritesheet_68
-    21300138: xira_final-spritesheet_69
-    21300140: xira_final-spritesheet_70
-    21300142: xira_final-spritesheet_71
-    21300144: xira_final-spritesheet_72
-    21300146: xira_final-spritesheet_73
-    21300148: xira_final-spritesheet_74
-    21300150: xira_final-spritesheet_75
-    21300152: xira_final-spritesheet_76
-    21300154: xira_final-spritesheet_77
-  serializedVersion: 4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: xira_final-spritesheet_0
+  - first:
+      213: 21300002
+    second: xira_final-spritesheet_1
+  - first:
+      213: 21300004
+    second: xira_final-spritesheet_2
+  - first:
+      213: 21300006
+    second: xira_final-spritesheet_3
+  - first:
+      213: 21300008
+    second: xira_final-spritesheet_4
+  - first:
+      213: 21300010
+    second: xira_final-spritesheet_5
+  - first:
+      213: 21300012
+    second: xira_final-spritesheet_6
+  - first:
+      213: 21300014
+    second: xira_final-spritesheet_7
+  - first:
+      213: 21300016
+    second: xira_final-spritesheet_8
+  - first:
+      213: 21300018
+    second: xira_final-spritesheet_9
+  - first:
+      213: 21300020
+    second: xira_final-spritesheet_10
+  - first:
+      213: 21300022
+    second: xira_final-spritesheet_11
+  - first:
+      213: 21300024
+    second: xira_final-spritesheet_12
+  - first:
+      213: 21300026
+    second: xira_final-spritesheet_13
+  - first:
+      213: 21300028
+    second: xira_final-spritesheet_14
+  - first:
+      213: 21300030
+    second: xira_final-spritesheet_15
+  - first:
+      213: 21300032
+    second: xira_final-spritesheet_16
+  - first:
+      213: 21300034
+    second: xira_final-spritesheet_17
+  - first:
+      213: 21300036
+    second: xira_final-spritesheet_18
+  - first:
+      213: 21300038
+    second: xira_final-spritesheet_19
+  - first:
+      213: 21300040
+    second: xira_final-spritesheet_20
+  - first:
+      213: 21300042
+    second: xira_final-spritesheet_21
+  - first:
+      213: 21300044
+    second: xira_final-spritesheet_22
+  - first:
+      213: 21300046
+    second: xira_final-spritesheet_23
+  - first:
+      213: 21300048
+    second: xira_final-spritesheet_24
+  - first:
+      213: 21300050
+    second: xira_final-spritesheet_25
+  - first:
+      213: 21300052
+    second: xira_final-spritesheet_26
+  - first:
+      213: 21300054
+    second: xira_final-spritesheet_27
+  - first:
+      213: 21300056
+    second: xira_final-spritesheet_28
+  - first:
+      213: 21300058
+    second: xira_final-spritesheet_29
+  - first:
+      213: 21300060
+    second: xira_final-spritesheet_30
+  - first:
+      213: 21300062
+    second: xira_final-spritesheet_31
+  - first:
+      213: 21300064
+    second: xira_final-spritesheet_32
+  - first:
+      213: 21300066
+    second: xira_final-spritesheet_33
+  - first:
+      213: 21300068
+    second: xira_final-spritesheet_34
+  - first:
+      213: 21300070
+    second: xira_final-spritesheet_35
+  - first:
+      213: 21300072
+    second: xira_final-spritesheet_36
+  - first:
+      213: 21300074
+    second: xira_final-spritesheet_37
+  - first:
+      213: 21300076
+    second: xira_final-spritesheet_38
+  - first:
+      213: 21300078
+    second: xira_final-spritesheet_39
+  - first:
+      213: 21300080
+    second: xira_final-spritesheet_40
+  - first:
+      213: 21300082
+    second: xira_final-spritesheet_41
+  - first:
+      213: 21300084
+    second: xira_final-spritesheet_42
+  - first:
+      213: 21300086
+    second: xira_final-spritesheet_43
+  - first:
+      213: 21300088
+    second: xira_final-spritesheet_44
+  - first:
+      213: 21300090
+    second: xira_final-spritesheet_45
+  - first:
+      213: 21300092
+    second: xira_final-spritesheet_46
+  - first:
+      213: 21300094
+    second: xira_final-spritesheet_47
+  - first:
+      213: 21300096
+    second: xira_final-spritesheet_48
+  - first:
+      213: 21300098
+    second: xira_final-spritesheet_49
+  - first:
+      213: 21300100
+    second: xira_final-spritesheet_50
+  - first:
+      213: 21300102
+    second: xira_final-spritesheet_51
+  - first:
+      213: 21300104
+    second: xira_final-spritesheet_52
+  - first:
+      213: 21300106
+    second: xira_final-spritesheet_53
+  - first:
+      213: 21300108
+    second: xira_final-spritesheet_54
+  - first:
+      213: 21300110
+    second: xira_final-spritesheet_55
+  - first:
+      213: 21300112
+    second: xira_final-spritesheet_56
+  - first:
+      213: 21300114
+    second: xira_final-spritesheet_57
+  - first:
+      213: 21300116
+    second: xira_final-spritesheet_58
+  - first:
+      213: 21300118
+    second: xira_final-spritesheet_59
+  - first:
+      213: 21300120
+    second: xira_final-spritesheet_60
+  - first:
+      213: 21300122
+    second: xira_final-spritesheet_61
+  - first:
+      213: 21300124
+    second: xira_final-spritesheet_62
+  - first:
+      213: 21300126
+    second: xira_final-spritesheet_63
+  - first:
+      213: 21300128
+    second: xira_final-spritesheet_64
+  - first:
+      213: 21300130
+    second: xira_final-spritesheet_65
+  - first:
+      213: 21300132
+    second: xira_final-spritesheet_66
+  - first:
+      213: 21300134
+    second: xira_final-spritesheet_67
+  - first:
+      213: 21300136
+    second: xira_final-spritesheet_68
+  - first:
+      213: 21300138
+    second: xira_final-spritesheet_69
+  - first:
+      213: 21300140
+    second: xira_final-spritesheet_70
+  - first:
+      213: 21300142
+    second: xira_final-spritesheet_71
+  - first:
+      213: 21300144
+    second: xira_final-spritesheet_72
+  - first:
+      213: 21300146
+    second: xira_final-spritesheet_73
+  - first:
+      213: 21300148
+    second: xira_final-spritesheet_74
+  - first:
+      213: 21300150
+    second: xira_final-spritesheet_75
+  - first:
+      213: 21300152
+    second: xira_final-spritesheet_76
+  - first:
+      213: 21300154
+    second: xira_final-spritesheet_77
+  externalObjects: {}
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -90,6 +245,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -98,6 +255,9 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -105,10 +265,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -117,41 +280,59 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -167,7 +348,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_1
       rect:
@@ -180,7 +369,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_2
       rect:
@@ -193,7 +390,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_3
       rect:
@@ -206,7 +411,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_4
       rect:
@@ -219,7 +432,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_5
       rect:
@@ -232,7 +453,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_6
       rect:
@@ -245,7 +474,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_7
       rect:
@@ -258,7 +495,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_8
       rect:
@@ -271,7 +516,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_9
       rect:
@@ -284,7 +537,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_10
       rect:
@@ -297,7 +558,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_11
       rect:
@@ -310,7 +579,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_12
       rect:
@@ -323,7 +600,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_13
       rect:
@@ -336,7 +621,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_14
       rect:
@@ -349,7 +642,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_15
       rect:
@@ -362,7 +663,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_16
       rect:
@@ -375,7 +684,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_17
       rect:
@@ -388,7 +705,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_18
       rect:
@@ -401,7 +726,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_19
       rect:
@@ -414,7 +747,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_20
       rect:
@@ -427,7 +768,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_21
       rect:
@@ -440,7 +789,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_22
       rect:
@@ -453,7 +810,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_23
       rect:
@@ -466,7 +831,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_24
       rect:
@@ -479,7 +852,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_25
       rect:
@@ -492,7 +873,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_26
       rect:
@@ -505,7 +894,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_27
       rect:
@@ -518,7 +915,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_28
       rect:
@@ -531,7 +936,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: xira_final-spritesheet_77
       rect:
@@ -544,9 +957,28 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab305410000000000800000000000000
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
