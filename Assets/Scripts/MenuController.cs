@@ -9,8 +9,6 @@ public class MenuController : MonoBehaviour {
     public GameObject deathMenu;
     public TextMeshProUGUI scoreText;
     public Slider energyBar;
-    public Button jump;
-    public Button fire;
     Vector2 startPosition;
     float startTime;
 

@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour {
     public Sprite[] batteries = new Sprite[3];
-    public Sprite[] weapons = new Sprite[5];
     public int pickupType;
     public int pickupNumber;
 
     // Use this for initialization
     void Start () {
-        pickupType = Random.Range(0, 2);
+        pickupType = Random.Range(0, 1);
         if (pickupType == 0) {
             pickupNumber = Random.Range(0, batteries.Length);
             GetComponent<SpriteRenderer>().sprite = batteries[pickupNumber];
-        }
-        else {
-            pickupNumber = Random.Range(0, weapons.Length);
-            GetComponent<SpriteRenderer>().sprite = weapons[pickupNumber];
         }
     }
 	

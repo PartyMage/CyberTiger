@@ -51,14 +51,17 @@ public class Spawner : MonoBehaviour {
             }
 
         }
-        if (platformTimeCount == 225)
+        if(secondFloorActive == true)
         {
-            floorPool[count].transform.position = SecondFloorLevel.transform.position;
-            count++;
-            platformTimeCount = 0;
-            if(count == 9)
+            if (platformTimeCount == 225)
             {
-                count = 0;
+                floorPool[count].transform.position = SecondFloorLevel.transform.position;
+                count++;
+                platformTimeCount = 0;
+                if (count == 9)
+                {
+                    count = 0;
+                }
             }
         }
 

@@ -6,6 +6,7 @@ public class ShotController : MonoBehaviour {
 
     public float speed;
     public bool concussive = false;
+    public CyberTigerController tiger;
     
     private Vector2 objectPoolPosition = new Vector2(-15f, -25f);
 	// Use this for initialization
@@ -25,6 +26,7 @@ public class ShotController : MonoBehaviour {
             GameController.instance.score++;
             GameController.instance.scoreText.text = "Score: " + GameController.instance.score.ToString();
             other.gameObject.transform.position = objectPoolPosition;
+            tiger.energy += 15;
             Destroy(gameObject);
         }
         if (other.tag == "Obstacle")
@@ -33,6 +35,7 @@ public class ShotController : MonoBehaviour {
                 GameController.instance.score++;
                 GameController.instance.scoreText.text = "Score: " + GameController.instance.score.ToString();
                 other.gameObject.transform.position = objectPoolPosition;
+                tiger.energy += 30;
             }
             Destroy(gameObject);
 
