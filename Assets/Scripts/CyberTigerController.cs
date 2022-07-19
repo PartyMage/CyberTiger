@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class CyberTigerController : MonoBehaviour {
 
+    public GameController gameControl;
     public float upForce = 200f;
     public int energy = 100;
     public Slider energyBar;
@@ -22,7 +23,9 @@ public class CyberTigerController : MonoBehaviour {
     private int lastSpeedup = 1;
     private Vector2 objectPoolPosition = new Vector2(-15f, -25f);
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
+        gameControl = GameObject.Find("GameControl").GetComponent<GameController>();
         rb2d = GetComponent<Rigidbody2D> ();
         energyBar.maxValue = energy;
         currentShot = weapon[0];
@@ -31,9 +34,9 @@ public class CyberTigerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         currentEnergy.text = energy.ToString();
-        if (GameController.instance.score % 3 == 0 && lastSpeedup != GameController.instance.score) {
-            lastSpeedup = GameController.instance.score;
-            GameController.instance.scrollSpeed *= 1.5f;
+        if (gameControl.score % 3 == 0 && lastSpeedup != gameControl.score) {
+            lastSpeedup = gameControl.score;
+            gameControl.scrollSpeed *= 1.5f;
         }
 
         energyBar.value = energy;
@@ -41,7 +44,7 @@ public class CyberTigerController : MonoBehaviour {
             isDead = true;
         if (isDead == true) {
             //MenuController.
-            GameController.instance.gameOver = true;
+            gameControl.gameOver = true;
         }
             
     }
@@ -76,9 +79,9 @@ public class CyberTigerController : MonoBehaviour {
             other.gameObject.transform.position = objectPoolPosition;
         }
         if (other.gameObject.tag == "Pickup") {
-            if (GameController.instance.pickupType == 0) {
+            if (gameControl.pickupType == 0) {
 
-                switch (GameController.instance.pickupNumber) {
+                switch (gameControl.pickupNumber) {
                     case 0:
                         energy += 10;
                         other.gameObject.transform.position = objectPoolPosition;

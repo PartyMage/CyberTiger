@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    public static GameController instance;
-    public GameObject deathMenu;
+    public GameObject HUD;
+    public DeathMenu deathMenu;
     public TextMeshProUGUI scoreText;
     public float scrollSpeed = -3.5f;
     public bool gameOver = false;
@@ -18,21 +18,29 @@ public class GameController : MonoBehaviour {
     public int lifetimeScore = 0;
     public int score = 0;
     public int energy = 100;
+    int count = 0;
 
     // Use this for initialization
-    void Awake() {
-        if (instance == null) {
-            DontDestroyOnLoad(gameObject);
-            instance = this;
-            deathMenu = GameObject.Find("Death Menu");
-            scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
+    void Awake()
+    {
+        gameOver = false;
+        HUD = GameObject.Find("HUD");
+        deathMenu = GameObject.Find("Death Menu").GetComponent<DeathMenu>();
+        if (deathMenu != null)
+            deathMenu.gameObject.SetActive(false);
+        scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
+        count = 1;
+    }
+    // Update is called once per frame
+    void Update () {
+        if (count != 0)
+        {
+            if (gameOver == true)
+            {
+                deathMenu.gameObject.SetActive(true);
+                deathMenu.scoreString.text = "Score: " + score;
+                count = 0;
+            }
         }
-        else if (instance != this)
-            Destroy(gameObject);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

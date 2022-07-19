@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour {
 
+    public TextMeshProUGUI scoreString;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,7 +14,7 @@ public class DeathMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
     //run when player clicks the main menu button
@@ -22,6 +24,6 @@ public class DeathMenu : MonoBehaviour {
 
     //run when player clicks to run again
     public void RunAgainClick() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
